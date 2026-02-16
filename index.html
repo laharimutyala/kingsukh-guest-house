@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kingsukh Guest House</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous"
+        referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+    <header>
+        <div class="content flex_space">
+            <div class="logo">
+                <h2 class="logo-name">KingSukh</h2>
+            </div>
+            <div class="navlinks">
+                <ul id="menulist">
+                    <li><a href="#home">Home</a> </li>
+                    <li><a href="#about">About</a> </li>
+                    <li><a href="#Services">Services</a> </li>
+                    <li><a href="#Rooms">Rooms</a> </li>
+                    <li><a href="#Gallery">Gallery</a> </li>
+                    <li><a href="#contact">Contact</a> </li>
+                    <li> <i class="fa fa-search"></i> </li>
+                    <li> <button class="primary-btn">BOOK NOW</button> </li>
+                </ul>
+                <span class="fa fa-bars" onclick="menutoggle()"></span>
+            </div>
+        </div>
+    </header>
+
+
+    <script>
+        var menulist = document.getElementById('menulist');
+        menulist.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (menulist.style.maxHeight == "0px") {
+                menulist.style.maxHeight = "100vh";
+            } else {
+                menulist.style.maxHeight = "0px";
+            }
+        }
+    </script>
+
+
+    <section class="home">
+        <div class="content">
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <img src="kingimages/ayodhya.webp" alt="">
+                    <div class="text">
+                        <h1 class="heading-title">Make Yourself At Home<br> In Our <span>Guest House.</span></h1>
+                        <div class="flex">
+                            <button class="primary-btn">BOOK NOW</button>
+                            <button class="secondary-btn">CONTACT US</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 0,
+            nav: true,
+            dots: false,
+            navText: ["<i class = 'fa fa-chevron-left'></i>", "<i class = 'fa fa-chevron-right'></i>"],
+            responsive: {
+                0: {
+                    items: 1
+                },
+                768: {
+                    items: 1
+                },
+                1000: {
+                    items: 1
+                }
+            }
+        })
+    </script>
+
+
+
+
+    <section class="book">
+        <div class="container flex_space">
+            <div class="text">
+                <h1> <span>Book </span> Your Rooms </h1>
+            </div>
+            <div class="form">
+                <form class="grid">
+                    <input type="date" placeholder="Araival Date">
+                    <input type="date" placeholder="Departure Date">
+                    <input type="number" placeholder="Adults">
+                    <input type="number" placeholder="Childern">
+                    <input type="submit" value="CHECK AVAILABILITY">
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="about top">
+        <div class="container flex">
+            <div class="left">
+                <div class="heading">
+                    <h1>WELCOME</h1>
+                    <h2>KingSukh Guest House</h2>
+                </div>
+                <p class="about-section">Embark on a tranquil journey at our Kingsukh Guest House, enveloped by the scenic allure of Biharinath Hill, Baranti Hill, Susunia Hill, Joychandi Hill, Garhpanchkot, Baranti Dam, Maithon Dam, and the captivating Panchat Dam. Revel in
+                    the embrace of comfort, relish delightful meals, and unwind in our verdant garden oasis. Your ideal retreat beckons, promising a harmonious blend of nature's beauty and heartfelt hospitality. Explore the hidden gems of Purulia, creating
+                    memories that linger long after your stay.</p>
+                <button class="primary-btn">ABOUT US</button>
+            </div>
+            <div class="about-image">
+                <img src="kingimages/out.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="counter top">
+        <div class="container grid">
+            <div class="box">
+                <h1>2500</h1>
+                <hr>
+                <span>Customer</span>
+            </div>
+            <div class="box">
+                <h1>1250</h1>
+                <hr>
+                <span>Happy Customer</span>
+            </div>
+            <div class="box">
+                <h1>150</h1>
+                <hr>
+                <span>Expert Technicians</span>
+            </div>
+            <div class="box">
+                <h1>3550</h1>
+                <hr>
+                <span>Desktop Reaired</span>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="rooms">
+        <div class="container top">
+            <div class="heading">
+                <h1>EXPOLRE</h1>
+                <h2>Our Rooms</h2>
+            </div>
+
+            <div class="content mtop">
+                <div class="owl-carousel owl-carousel1 owl-theme">
+                    <div class="items">
+                        <div class="image">
+                            <img src="kingimages/small.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <h2>Small Rooms</h2>
+                            <div class="rate flex">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <p>Escape to comfort in our Cozy Haven Room, a snug retreat designed for intimate relaxation.</p>
+                            <div class="button flex">
+                                <button class="primary-btn">BOOK NOW</button>
+                                <h3>1000/-<span> <br> Per Night </span> </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="image">
+                            <img src="kingimages/large.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <h2>Suporior Rooms</h2>
+                            <div class="rate flex">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <p>Indulge in luxury and ample space in our Spacious Serenity Suite, where tranquility meets roomy elegance.
+                            </p>
+                            <div class="button flex">
+                                <button class="primary-btn">BOOK NOW</button>
+                                <h3>1500/- <span> <br> Per Night </span> </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="image">
+                            <img src="kingimages/room1.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <h2>Suporior Rooms</h2>
+                            <div class="rate flex">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <p>Thoughtfully designed rooms with seamless layouts, and spaces for rest, work, and relaxation.
+                            </p>
+                            <div class="button flex">
+                                <button class="primary-btn">BOOK NOW</button>
+                                <h3>1500/- <span> <br> Per Night </span> </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <script>
+        $('.owl-carousel1').owlCarousel({
+            loop: true,
+            margin: 40,
+            nav: true,
+            dots: false,
+            navText: ["<i class = 'fa fa-chevron-left'></i>", "<i class = 'fa fa-chevron-right'></i>"],
+            responsive: {
+                0: {
+                    items: 1
+                },
+                768: {
+                    items: 2,
+                    margin: 10,
+                },
+                1000: {
+                    items: 3
+                }
+            }
+        })
+    </script>
+
+
+
+    <section class="gallery">
+        <div class="container top">
+            <div class="heading">
+                <h1>PHOTOS</h1>
+                <h2>Our Gallery</h2>
+                <p>Discover the charm and scenic beauty of our guest house through our photo gallery.
+            </div>
+        </div>
+
+        <div class="content mtop">
+            <div class="owl-carousel owl-carousel1 owl-theme">
+                <div class="items">
+                    <div class="img">
+                        <img src="kingimages/1.jpg" alt="">
+                    </div>
+
+                </div>
+                <div class="items">
+                    <div class="img">
+                        <img src="kingimages/baranti.webp" alt="">
+                    </div>
+
+                </div>
+                <div class="items">
+                    <div class="img">
+                        <img src="kingimages/flower.jpg" alt=" ">
+                    </div>
+
+                </div>
+                <div class="items ">
+                    <div class="img ">
+                        <img src="kingimages/palash.webp" alt=" ">
+                    </div>
+
+                </div>
+                <div class="items">
+                    <div class="img">
+                        <img src="kingimages/mithonDam.webp" alt="">
+                    </div>
+
+                </div>
+                <div class="items">
+                    <div class="img">
+                        <img src="kingimages/ayodhya.webp" alt="">
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        $('.owl-carousel1').owlCarousel({
+            loop: true,
+            margin: 0,
+            nav: true,
+            dots: false,
+            autoplay: true,
+            autoplayTimeout: 1000,
+            autoplayHoverPause: true,
+            navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
+            responsive: {
+                0: {
+                    items: 1
+                },
+                768: {
+                    items: 4,
+                },
+                1000: {
+                    items: 6
+                }
+            }
+        })
+    </script>
+
+
+    <section class="services top">
+        <div class="container">
+            <div class="heading">
+                <h1>SERVICES</h1>
+                <h2>Our Services</h2>
+                <p>Strive Only For The Best
+            </div>
+
+
+            <div class="content flex_space">
+                <div class="left grid2">
+                    <div class="box">
+                        <div class="text">
+                            <i class="fa-solid fa-champagne-glasses"></i>
+                            <h3>Delious Food</h3>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="text">
+                            <i class="fa-solid fa-person-biking"></i>
+                            <h3>24 Hours Room Service</h3>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="text">
+                            <i class="fa-solid fa-utensils"></i>
+                            <h3>Inhouse Restaurant</h3>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="text">
+                            <i class="fa-solid fa-spa"></i>
+                            <h3>Tourist Guide Support</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <img src="kingimages/service.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container grid">
+            <div class="box">
+                <h1>KingSukh Guest House</h1>
+                <p>
+                    Discover a world of comfort, luxury, and adventure as you explore our curated selection of hotels, making every moment of your getaway truly extraordinary.</p>
+
+                <div class="icon">
+                    <i class="fa fa-facebook-f"></i>
+                    <i class="fa fa-instagram"></i>
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-youtube"></i>
+                </div>
+            </div>
+
+            <div class="box">
+                <h2>Links</h2>
+                <ul>
+                    <li>Company History</li>
+                    <li>About Us</li>
+                    <li>Contact Us</li>
+                    <li>Services</li>
+                    <li>Privacy Policy</li>
+                </ul>
+            </div>
+
+            <div class="box">
+                <h2>Contact Us</h2>
+                <i class="fa fa-location-dot"></i>
+                <label>Beside Barshal Water Tank, Manpur, Barhanti, West Bengal 723156</label> <br>
+                <i class="fa fa-phone"></i>
+                <label>+91 9007062180</label> <br>
+                <i class="fa fa-envelope"></i>
+                <label>kkghosh0099@gmail.com</label> <br>
+            </div>
+        </div>
+    </footer>
+
+    <div class="legal">
+        <p class="container">Copyright (c) 2024 KingSukh Guest House.All Rights Reserved</p>
+    </div>
+
+
+
+    <script src="https://kit.fontawesome.com/032d11eac3.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
